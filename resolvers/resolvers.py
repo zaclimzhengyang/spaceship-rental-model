@@ -7,6 +7,6 @@ DEFINITE_CONTRACT_SELECTOR_SERVICE: DefiniteContractSelectorService = DefiniteCo
 
 def resolve_optimize_contracts(contracts: list[Contract]) -> SlimSolution:
     """
-    given a list of contracts, return the optimal ones
+    given a list of contracts, return the optimal contracts
     """
     return DEFINITE_CONTRACT_SELECTOR_SERVICE.select_contracts(contracts).to_slim()
