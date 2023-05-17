@@ -170,7 +170,7 @@ class DefiniteContractSelectorService(ContractSelectorService):
 
                 """
                 time Complexity: O(T), where T is the number of unique start times after the current contract end time
-                for all start hours that occur after the contract end hour, update their max profits with this new solution
+                for all start hours that occur after the contract end hour, update their max profits with the new solution
                 """
                 for start_hour_index in range(
                         earliest_start_hour_index, len(start_hours)
